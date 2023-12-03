@@ -1,0 +1,5 @@
+- Hybrid of static WASM code and use of server-side rendering.
+- Enhanced Server Side Rendering
+	- Static Server Rendering
+	- Enhanced navigation -
+	- Stream rendering - Placeholder loading for things that may take a while on load
