@@ -7,6 +7,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E9A35211-EFC
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SeeNowThisIsSharp12", "src\SeeNowThisIsSharp12\SeeNowThisIsSharp12.csproj", "{0B150142-0973-4496-A940-05DE7093ED80}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnet8pi", "src\dotnet8pi\dotnet8pi.csproj", "{DAFADFCF-44B0-470C-9222-A887C123D9D8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,12 +19,17 @@ Global
 		{0B150142-0973-4496-A940-05DE7093ED80}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0B150142-0973-4496-A940-05DE7093ED80}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0B150142-0973-4496-A940-05DE7093ED80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAFADFCF-44B0-470C-9222-A887C123D9D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAFADFCF-44B0-470C-9222-A887C123D9D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAFADFCF-44B0-470C-9222-A887C123D9D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAFADFCF-44B0-470C-9222-A887C123D9D8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{0B150142-0973-4496-A940-05DE7093ED80} = {E9A35211-EFCE-4216-BB6F-A6C19B4FA9C3}
+		{DAFADFCF-44B0-470C-9222-A887C123D9D8} = {E9A35211-EFCE-4216-BB6F-A6C19B4FA9C3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {61AEA531-42BC-4B34-89CE-2166C2E3474E}

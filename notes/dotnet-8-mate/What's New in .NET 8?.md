@@ -32,6 +32,7 @@
 
 
 ## Let's get into it!
+- 🤖 [[dotnet 8 | .NET 8]] 
 - 💜 [[CSharp 12| C# 12]]
 - 🌎 [[ASP.NET Core]]
 - 📈 [[EF Core 8]]
@@ -39,5 +40,4 @@
 - 👓 [[Visual Studio]]
 - 🌴 [[MAUI]]
 - ☁️ [[Aspire]]
-- 🔥 [[Blazor]]
 - ... and so much more!!

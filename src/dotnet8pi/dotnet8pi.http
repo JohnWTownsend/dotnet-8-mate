@@ -1,0 +1,6 @@
+@dotnet8pi_HostAddress = http://localhost:5262
+
+GET {{dotnet8pi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

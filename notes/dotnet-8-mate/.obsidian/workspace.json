@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "What's New in .NET 8?.md",
+                "file": "specifics/dotnet 8.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "b46375d18cb09517",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "What's New in .NET 8?.md",
+                "file": "specifics/dotnet 8.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "What's New in .NET 8?.md",
+                "file": "specifics/dotnet 8.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "What's New in .NET 8?.md"
+                "file": "specifics/dotnet 8.md"
               }
             }
           }
@@ -149,17 +148,18 @@
   },
   "active": "be5b22666f9c8086",
   "lastOpenFiles": [
-    "specifics/CSharp 12.md",
+    "specifics/ASP.NET Core.md",
+    "specifics/dotnet 8.md",
     "What's New in .NET 8?.md",
     "specifics/EF Core 8.md",
-    "specifics/ASP.NET Core.md",
+    "specifics/CSharp 12.md",
     "specifics/Aspire.md",
-    "images/Pasted image 20231203113412.png",
-    "specifics/Visual Studio.md",
-    "specifics/Performance.md",
     "specifics/Blazor.md",
-    "images/Pasted image 20231203112826.png",
     "specifics/MAUI.md",
+    "specifics/Performance.md",
+    "specifics/Visual Studio.md",
+    "images/Pasted image 20231203113412.png",
+    "images/Pasted image 20231203112826.png",
     "images",
     "images/Pasted image 20231203113040.png",
     "images/Pasted image 20231203112942.png",
