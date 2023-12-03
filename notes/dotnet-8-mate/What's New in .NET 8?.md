@@ -18,7 +18,6 @@
 > - .NET 7 --> May 14th, 2024
 > - .NET 6 --> November 12, 2024
 
-
 ## What's New?
 >[!info]- ... Everything!
 > - 💜 C# 12 
