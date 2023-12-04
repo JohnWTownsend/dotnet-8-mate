@@ -159,9 +159,9 @@ https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-8/
 
 >[!note] Pull Requests
 
+>[!bug] Improved Debugging 
 
-
-> [!tip] Http Request Engine
+> [!info] Http Request Engine
 
 ---
 ___MAUI___
