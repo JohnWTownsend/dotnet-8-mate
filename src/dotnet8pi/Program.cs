@@ -1,18 +1,13 @@
-using Microsoft.AspNetCore.Mvc;
-
 var builder = WebApplication.CreateBuilder(args);
-
-// Add services to the container.
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddLogging((loggingBuilder) => loggingBuilder
+builder.Services.AddLogging((loggingBuilder) => 
+    loggingBuilder
         .SetMinimumLevel(LogLevel.Trace)
         .AddConsole()
-        );
+);
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -26,7 +21,7 @@ var summaries = new[]
     "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
 };
 
-app.MapGet("/weatherforecast", (ILogger<Program> logger) =>
+app.MapGet("/weatherforecast", () =>
 {
     var forecast =  Enumerable.Range(1, 5).Select(index =>
         new WeatherForecast
@@ -36,8 +31,8 @@ app.MapGet("/weatherforecast", (ILogger<Program> logger) =>
             summaries[Random.Shared.Next(summaries.Length)]
         ))
         .ToArray();
-    logger.LogTrace("John Was Here");
-    logger.WeatherForecastReceived(forecast);
+    app.Logger.LogTrace("John Was Here");
+    app.Logger.WeatherForecastReceived(forecast);
     return forecast;
 })
 .WithName("GetWeatherForecast")
@@ -45,14 +40,14 @@ app.MapGet("/weatherforecast", (ILogger<Program> logger) =>
 
 app.Run();
 
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
+public record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
 {
     public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
 }
 
-static partial class Log
+public static partial class Log
 {
-    [LoggerMessage(Level = LogLevel.Debug,
+    [LoggerMessage(Level = LogLevel.Information,
         Message = "Received call for Forecast: {weatherForecast}")]
-    public static partial void WeatherForecastReceived(this ILogger logger, [LogProperties] IEnumerable<WeatherForecast> weatherForecast);
+    public static partial void WeatherForecastReceived(this Microsoft.Extensions.Logging.ILogger logger, [LogProperties] IEnumerable<WeatherForecast> weatherForecast);
 }
