@@ -38,6 +38,14 @@ app.MapGet("/weatherforecast", () =>
 .WithName("GetWeatherForecast")
 .WithOpenApi();
 
+
+
+app.MapGet("/jowtow", () =>
+{
+    
+    return "jowtow power!";
+})
+.WithOpenApi();
 app.Run();
 
 public record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
