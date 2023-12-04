@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "specifics/dotnet 8.md",
+                "file": "What is New in dotnet 8.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "specifics/dotnet 8.md",
+                "file": "What is New in dotnet 8.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "specifics/dotnet 8.md",
+                "file": "What is New in dotnet 8.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "specifics/dotnet 8.md"
+                "file": "What is New in dotnet 8.md"
               }
             }
           }
@@ -148,16 +148,17 @@
   },
   "active": "be5b22666f9c8086",
   "lastOpenFiles": [
+    "specifics/Aspire.md",
+    "What is New in dotnet 8.md",
+    "specifics/Visual Studio.md",
+    "specifics/Performance.md",
+    "specifics/EF Core 8.md",
     "specifics/ASP.NET Core.md",
+    "specifics/CSharp 12.md",
     "specifics/dotnet 8.md",
     "What's New in .NET 8?.md",
-    "specifics/EF Core 8.md",
-    "specifics/CSharp 12.md",
-    "specifics/Aspire.md",
     "specifics/Blazor.md",
     "specifics/MAUI.md",
-    "specifics/Performance.md",
-    "specifics/Visual Studio.md",
     "images/Pasted image 20231203113412.png",
     "images/Pasted image 20231203112826.png",
     "images",
