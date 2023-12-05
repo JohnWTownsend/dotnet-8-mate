@@ -54,7 +54,7 @@ ___. NET 8___
 
 ---
 ___C# 12___
-> [!success]- Primary Constructors
+> [!success] Primary Constructors
 > Before
 > ``` csharp
 > public StudentService
@@ -87,26 +87,31 @@ ___C# 12___
 > }
 >```
 
->[!tip]- Collection Expressions
+___C# 12___
+>[!tip] Collection Expressions
 >```csharp
 >	var nums1 = new List < int > { 1, 2, 3 };
 >	List < int > nums2 = [1,2,3];
 >	var foo = [..nums1, ..nums2];
 >```
+---
 
-> [!note]- Alias Any Type
+___C# 12___
+> [!note] Alias Any Type
 > ```csharp
 > using Coord3 = (int x, int y, int z);
 > Coord myCoord = (1, 0, 1);
 > ```
-
 ---
 
->[!    note]- Default Lambda Parameters
+___C# 12___
+>[!note] Default Lambda Parameters
 >```csharp
 >var myFunc = (string pluralizeMe = "cat") => pluralizeMe + 's';
 >```
+---
 
+___C# 12___
 > [!danger]- Interceptors
 > ### What is it?
 > Essentially, replace some functionality based on source file and line/column location dynamically. This is sort of like doing a full-text replacement of a method at compile time. (sometimes called monkey patching in other languages)
@@ -125,21 +130,39 @@ ___C# 12___
 
 ---
 ___ASP.NET Core___
-> [!tip]- Blazor
+> [!tip] Blazor
 > - Hybrid of static WASM code and use of server-side rendering.
 > - Enhanced Server Side Rendering
 >	- Static Server Rendering
 >	- Enhanced navigation -
 >	- Stream rendering - Placeholder loading for things that may take a while on load
+---
 
-> [!abstract]- Native AOT
+___ASP.NET Core___
+> [!abstract] Native AOT
 > Again, things are small and speedy. Not a whole lot that we'll have to do, but will make our lives better.
+---
 
->[!todo]- Improved Auth Setup
+___ASP.NET Core___
+>[!todo] Improved Auth Setup
 > Easier setup of auth for SPAs using new ```MapIdentityApi``` extension method
 
 ---
  ___EF Core___
+> [!tip] Complex Types
+>  a way to use a class as a grouping of reusable columns in EF. For instance if you wanted to reuse address fields for shipping, billing, etc. You could create a ComplexType for Address and reuse that class in multiple entity types. The use of Complex Types can lead to more concise code and easier mapping.
+---
+
+>[!note] Raw SQL Queries for Unmapped Types
+> this allows users to query the database using raw SQL similar to the way you'd query using the Dapper ORM and also allows mapping the results of the query to a C# class. In previous versions of EF, the class for SqlQuery would need to bemapped to the DbContext via a DbSet. In EF8, unmapped types can also be queried in this way.
+---
+
+>[!abstract] Much more
+> - Primitive Collection Support
+> - JSON Column enhancements
+> - DateOnly and TimeOnly support in model building
+> - Hierarchyid datatype support for SQL Server
+
 
 ---
 ___Performance___
@@ -166,11 +189,11 @@ https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-8/
 ---
 ___MAUI___
 
-
+>[!danger] If you are on Xamarin, you need to get to MAUI before May
 
 ---
  ___Aspire___
-Evolution of dotnet tye.
+Evolution of dotnet Tye.
 
 Original dream was to make microservices or "cloud native" easy
 
